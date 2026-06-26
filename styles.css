@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #F1F5F9;
+    color: #1E293B;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0E4D64, #14B8A6);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.hero-sub {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.contact-box {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.18);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* TITULOS */
+.section-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #0E4D64;
+}
+
+/* TIMELINE */
+.timeline {
+    display: grid;
+    gap: 20px;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 6px solid #14B8A6;
+}
+
+/* PRECIOS */
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.price-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-top: 6px solid #0E4D64;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0E4D64;
+}
+
+/* TARJETAS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-bottom: 5px solid #14B8A6;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+/* LISTAS */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list li {
+    background: white;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-left: 5px solid #0E4D64;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #475569;
+    font-size: 0.9rem;
+}

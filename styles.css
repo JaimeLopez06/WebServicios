@@ -131,3 +131,91 @@ body {
     color: #475569;
     font-size: 0.9rem;
 }
+
+/* ----------------------------- */
+/* 📱 RESPONSIVE COMPLETO */
+/* ----------------------------- */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .price-grid,
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-box {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .price-card {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .list li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 420px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1.3rem;
+    }
+
+    .card ul li {
+        font-size: 0.9rem;
+    }
+}

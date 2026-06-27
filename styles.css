@@ -124,6 +124,48 @@ body {
     border-left: 5px solid #0E4D64;
 }
 
+/* GRID DE PROYECTOS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.project-column {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-bottom: 5px solid #14B8A6;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0E4D64;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-item {
+    display: block;
+    background: #0E4D64;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.project-item:hover {
+    background: #14B8A6;
+    transform: translateY(-2px);
+}
+
 /* FOOTER */
 .footer {
     text-align: center;
@@ -132,30 +174,16 @@ body {
     font-size: 0.9rem;
 }
 
-/* ----------------------------- */
-/* 📱 RESPONSIVE COMPLETO */
-/* ----------------------------- */
-
-/* Tablets */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .price-grid,
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Móviles grandes */
 @media (max-width: 600px) {
-    .hero {
-        padding: 60px 20px;
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
@@ -164,58 +192,5 @@ body {
 
     .hero h2 {
         font-size: 1.1rem;
-    }
-
-    .contact-box {
-        width: 100%;
-        font-size: 0.9rem;
-    }
-
-    .section-title {
-        font-size: 1.4rem;
-    }
-
-    .price-card {
-        padding: 20px;
-    }
-
-    .price {
-        font-size: 1.5rem;
-    }
-
-    .card {
-        padding: 18px;
-    }
-
-    .list li {
-        font-size: 0.95rem;
-    }
-}
-
-/* Móviles pequeños */
-@media (max-width: 420px) {
-    .hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .hero h2 {
-        font-size: 1rem;
-    }
-
-    .contact-box {
-        padding: 12px;
-        font-size: 0.85rem;
-    }
-
-    .section-title {
-        font-size: 1.2rem;
-    }
-
-    .price {
-        font-size: 1.3rem;
-    }
-
-    .card ul li {
-        font-size: 0.9rem;
     }
 }

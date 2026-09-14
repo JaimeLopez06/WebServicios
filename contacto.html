@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto — Jaime López</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Contacto Privado</h1>
+        <p>Solicita una reunión exclusiva</p>
+    </header>
+
+    <main>
+
+        <section class="contact-section fade">
+            <h2>Formulario de contacto</h2>
+            <p class="desc">
+                Rellena este formulario para solicitar una reunión privada.  
+                Solo atiendo proyectos que buscan excelencia y diseño de alto nivel.
+            </p>
+
+            <form class="formulario" 
+                  action="https://formsubmit.co/jaimelopezc06@gmail.com" 
+                  method="POST">
+
+                <!-- Seguridad -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu web de lujo">
+                <input type="hidden" name="_next" value="https://jaimelopez06.github.io/Pruebas/gracias.html">
+
+                <!-- BLOQUE 1 -->
+                <div class="form-block">
+                    <h3 class="form-title">Datos personales</h3>
+
+                    <label>Nombre completo</label>
+                    <input type="text" name="nombre" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" required>
+                </div>
+
+                <!-- BLOQUE 2 -->
+                <div class="form-block">
+                    <h3 class="form-title">Sobre tu proyecto</h3>
+
+                    <label>Tipo de proyecto</label>
+                    <select name="tipo_proyecto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Web corporativa">Web corporativa</option>
+                        <option value="Landing page">Landing page</option>
+                        <option value="Ecommerce">Ecommerce</option>
+                        <option value="Rediseño de web">Rediseño de web</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label>Presupuesto aproximado</label>
+                    <select name="presupuesto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Menos de 300€">Menos de 300€</option>
+                        <option value="300€ - 600€">300€ - 600€</option>
+                        <option value="600€ - 1000€">600€ - 1000€</option>
+                        <option value="Más de 1000€">Más de 1000€</option>
+                    </select>
+
+                    <label>Urgencia del proyecto</label>
+                    <select name="urgencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Inmediato">Inmediato</option>
+                        <option value="Esta semana">Esta semana</option>
+                        <option value="Este mes">Este mes</option>
+                        <option value="Sin prisa">Sin prisa</option>
+                    </select>
+                </div>
+
+                <!-- BLOQUE 3 -->
+                <div class="form-block">
+                    <h3 class="form-title">Servicios adicionales</h3>
+
+                    <p class="multi-info">Puedes seleccionar varias opciones</p>
+                    
+                    <div class="tag-selector">
+                        <label>
+                            <input type="checkbox" name="extras[]" value="SEO profesional">
+                            <span>SEO profesional</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="extras[]" value="Branding / Logotipo">
+                            <span>Branding / Logotipo</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="extras[]" value="Gestión de redes">
+                            <span>Gestión de redes</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="extras[]" value="Copywriting">
+                            <span>Copywriting</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <!-- BLOQUE 4 -->
+                <div class="form-block">
+                    <h3 class="form-title">Detalles del proyecto</h3>
+
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar solicitud</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Jaime López — Web Design Boutique</p>
+    </footer>
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const fades = document.querySelectorAll(".fade");
+            fades.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 120) {
+                    el.classList.add("visible");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

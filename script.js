@@ -7,3 +7,8 @@ document.addEventListener("scroll", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faders = document.querySelectorAll(".fade");
+    faders.forEach(el => el.classList.add("visible"));
+});

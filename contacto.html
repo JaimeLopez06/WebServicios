@@ -17,7 +17,7 @@
 
     <main>
 
-        <section class="contact-section fade">
+        <section class="contact-section">
             <h2>Formulario de contacto</h2>
             <p class="desc">
                 Rellena este formulario para solicitar una reunión privada.  
@@ -129,18 +129,6 @@
     <footer class="footer">
         <p>© 2026 Jaime López — Web Design Boutique</p>
     </footer>
-
-    <script>
-        document.addEventListener("scroll", () => {
-            const fades = document.querySelectorAll(".fade");
-            fades.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 120) {
-                    el.classList.add("visible");
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>

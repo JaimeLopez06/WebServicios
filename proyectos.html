@@ -3,85 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selección de trabajos realizados por Jaime López: reformas, clínicas, restauración, gimnasios, tiendas, peluquerías, tatuajes, aulas virtuales y juegos.">
     <title>Proyectos — Jaime López</title>
     <link rel="stylesheet" href="proyectos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="proyectos.js" defer></script>
 </head>
 
 <body>
-
     <header class="hero">
-        <h1>Proyectos</h1>
-        <p>Selección de trabajos realizados</p>
+        <div class="hero-content">
+            <p class="eyebrow">Jaime López — Web Design Boutique</p>
+            <h1>Proyectos</h1>
+            <p class="hero-description">Selección de trabajos realizados</p>
+        </div>
     </header>
 
     <main>
-
-        <section class="portfolio">
-
-            <h2>Reformas</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebReformas1/" target="_blank">Proyecto Reforma 1</a>
-                <a href="https://jaimelopez06.github.io/WebReformas2/" target="_blank">Proyecto Reforma 2</a>
-                <a href="http://jaimelopez06.github.io/WebReformas3/" target="_blank">Proyecto Reforma 3</a>
+        <section class="portfolio" aria-label="Proyectos">
+            <div class="portfolio-heading">
+                <div>
+                    <p class="eyebrow">Una selección de trabajos</p>
+                    <h2>Diseño para cada idea</h2>
+                </div>
+                <p class="project-count" id="project-count" aria-live="polite">21 proyectos</p>
             </div>
 
-            <h2>Clínicas</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebClinica1/" target="_blank">Clinica Fisioterapia</a>
+            <div class="filters" role="group" aria-label="Filtrar proyectos por categoría">
+                <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+                <button class="filter-button" type="button" data-filter="reformas" aria-pressed="false">Reformas</button>
+                <button class="filter-button" type="button" data-filter="clinicas" aria-pressed="false">Clínicas</button>
+                <button class="filter-button" type="button" data-filter="restauracion" aria-pressed="false">Restauración</button>
+                <button class="filter-button" type="button" data-filter="gimnasios" aria-pressed="false">Gimnasios</button>
+                <button class="filter-button" type="button" data-filter="tiendas" aria-pressed="false">Tiendas</button>
+                <button class="filter-button" type="button" data-filter="peluquerias" aria-pressed="false">Peluquerías</button>
+                <button class="filter-button" type="button" data-filter="tatuajes" aria-pressed="false">Tatuajes</button>
+                <button class="filter-button" type="button" data-filter="aulas" aria-pressed="false">Aulas virtuales</button>
+                <button class="filter-button" type="button" data-filter="juegos" aria-pressed="false">Juegos</button>
             </div>
 
-            <h2>Restauración</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebRestauracion1/" target="_blank">Proyecto Restauración 1</a>
-                <a href="https://jaimelopez06.github.io/WebRestauracion4/" target="_blank">Proyecto Restauración 2</a>
-                <a href="https://jaimelopez06.github.io/WebRestauracion5/" target="_blank">Proyecto Restauración 3</a>
-            </div>
+            <div class="project-grid" id="project-grid">
+                <a class="project-card" data-category="reformas" href="https://jaimelopez06.github.io/WebReformas1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebReformas1/" title="Vista previa de Proyecto Reforma 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Reformas</span>
+                        <h3>Proyecto Reforma 1</h3>
+                        <p>Reformas con criterio y detalle, acompañadas de principio a fin.</p>
+                    </div>
+                </a>
 
-            <h2>Gimnasios</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebGimnasios1/" target="_blank">Proyecto Gimnasio 1</a>
-                <a href="https://jaimelopez06.github.io/WebGimnasios2/" target="_blank">Proyecto Gimnasio 2</a>
-                <a href="https://jaimelopez06.github.io/WebGimnasios4/" target="_blank">Proyecto Gimnasio 3</a>
-            </div>
+                <a class="project-card" data-category="reformas" href="https://jaimelopez06.github.io/WebReformas2/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebReformas2/" title="Vista previa de Proyecto Reforma 2" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Reformas</span>
+                        <h3>Proyecto Reforma 2</h3>
+                        <p>Servicios de reforma y mejora para todo tipo de espacios.</p>
+                    </div>
+                </a>
 
-            <h2>Tiendas</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebTienda1/" target="_blank">Tienda 1</a>
-                <a href="https://jaimelopez06.github.io/Peluqueria1/" target="_blank">Peluqueria 1</a>
-                <a href="https://jaimelopez06.github.io/WebPeluqueria2/" target="_blank">Peluqueria 2</a>
-            </div>
+                <a class="project-card" data-category="reformas" href="https://jaimelopez06.github.io/WebReformas3/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebReformas3/" title="Vista previa de Proyecto Reforma 3" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Reformas</span>
+                        <h3>Proyecto Reforma 3</h3>
+                        <p>Una propuesta digital centrada en reformas y diseño de espacios.</p>
+                    </div>
+                </a>
 
-            <h2>Estudio Tatoos</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/EstudioTattoo/" target="_blank">Tattoo 1</a>
-                <a href="https://jaimelopez06.github.io/WebTatoo1/" target="_blank">Tattoo 2</a>
-            </div>
-            
-            <h2>Aulas Virtuales</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/WebAulaVirtual1/" target="_blank">Aula Virtual 1</a>
-            </div>
+                <a class="project-card" data-category="clinicas" href="https://jaimelopez06.github.io/WebClinica1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebClinica1/" title="Vista previa de Clinica Fisioterapia" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Clínicas</span>
+                        <h3>Clinica Fisioterapia</h3>
+                        <p>Fisioterapia personalizada para volver a moverse con confianza.</p>
+                    </div>
+                </a>
 
-            <h2>Juegos</h2>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/JuegoMemoria/" target="_blank">Juego Memoria</a>
-                <a href="https://jaimelopez06.github.io/JuegoTrivial/" target="_blank">Juego Preguntas</a>
-                <a href="https://jaimelopez06.github.io/JuegoBreakBricks/" target="_blank">Break Bricks</a>
-            </div>
-            </br>
-            <div class="grid">
-                <a href="https://jaimelopez06.github.io/JuegoSupervivencia/" target="_blank">Juego Supervivencia</a>
-                <a href="https://jaimelopez06.github.io/JuegoRutaAlBar/" target="_blank">Ruta al bar</a>
-            </div>
+                <a class="project-card" data-category="restauracion" href="https://jaimelopez06.github.io/WebRestauracion1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebRestauracion1/" title="Vista previa de Proyecto Restauración 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Restauración</span>
+                        <h3>Proyecto Restauración 1</h3>
+                        <p>Restaurante de cocina mediterránea de autor.</p>
+                    </div>
+                </a>
 
+                <a class="project-card" data-category="restauracion" href="https://jaimelopez06.github.io/WebRestauracion4/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebRestauracion4/" title="Vista previa de Proyecto Restauración 2" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Restauración</span>
+                        <h3>Proyecto Restauración 2</h3>
+                        <p>Una propuesta de alta cocina en un ambiente único.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="restauracion" href="https://jaimelopez06.github.io/WebRestauracion5/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebRestauracion5/" title="Vista previa de Proyecto Restauración 3" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Restauración</span>
+                        <h3>Proyecto Restauración 3</h3>
+                        <p>Una web para un restaurante con sabor a cocina bien hecha.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="gimnasios" href="https://jaimelopez06.github.io/WebGimnasios1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebGimnasios1/" title="Vista previa de Proyecto Gimnasio 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gimnasios</span>
+                        <h3>Proyecto Gimnasio 1</h3>
+                        <p>Gimnasio con clases, entrenadores personales y zona de musculación.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="gimnasios" href="https://jaimelopez06.github.io/WebGimnasios2/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebGimnasios2/" title="Vista previa de Proyecto Gimnasio 2" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gimnasios</span>
+                        <h3>Proyecto Gimnasio 2</h3>
+                        <p>Centro de entrenamiento con energía para entrenar fuerte y vivir mejor.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="gimnasios" href="https://jaimelopez06.github.io/WebGimnasios4/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebGimnasios4/" title="Vista previa de Proyecto Gimnasio 3" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gimnasios</span>
+                        <h3>Proyecto Gimnasio 3</h3>
+                        <p>Entrenamiento con intención, grupos pequeños y fuerza para todos los niveles.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="tiendas" href="https://jaimelopez06.github.io/WebTienda1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebTienda1/" title="Vista previa de Tienda 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Tiendas</span>
+                        <h3>Tienda 1</h3>
+                        <p>Tienda de tecnología con auriculares, altavoces y accesorios.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="peluquerias" href="https://jaimelopez06.github.io/Peluqueria1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/Peluqueria1/" title="Vista previa de Peluqueria 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Peluquerías</span>
+                        <h3>Peluqueria 1</h3>
+                        <p>Un estudio de peluquería con una propuesta elegante y cuidada.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="peluquerias" href="https://jaimelopez06.github.io/WebPeluqueria2/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebPeluqueria2/" title="Vista previa de Peluqueria 2" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Peluquerías</span>
+                        <h3>Peluqueria 2</h3>
+                        <p>Peluquería contemporánea en el centro de la ciudad.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="tatuajes" href="https://jaimelopez06.github.io/EstudioTattoo/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/EstudioTattoo/" title="Vista previa de Tattoo 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Tatuajes</span>
+                        <h3>Tattoo 1</h3>
+                        <p>Un estudio de tatuajes que combina tinta, arte y actitud.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="tatuajes" href="https://jaimelopez06.github.io/WebTatoo1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebTatoo1/" title="Vista previa de Tattoo 2" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Tatuajes</span>
+                        <h3>Tattoo 2</h3>
+                        <p>Un espacio en Madrid para dar forma a tatuajes personalizados.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="aulas" href="https://jaimelopez06.github.io/WebAulaVirtual1/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/WebAulaVirtual1/" title="Vista previa de Aula Virtual 1" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Visitar proyecto <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Aulas virtuales</span>
+                        <h3>Aula Virtual 1</h3>
+                        <p>Un espacio digital dedicado al aprendizaje en línea.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="juegos" href="https://jaimelopez06.github.io/JuegoMemoria/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/JuegoMemoria/" title="Vista previa de Juego Memoria" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Jugar ahora <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Juegos</span>
+                        <h3>Juego Memoria</h3>
+                        <p>Un juego de memoria para poner a prueba la atención y recordar parejas.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="juegos" href="https://jaimelopez06.github.io/JuegoTrivial/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/JuegoTrivial/" title="Vista previa de Juego Preguntas" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Jugar ahora <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Juegos</span>
+                        <h3>Juego Preguntas</h3>
+                        <p>Un trivial de cultura general para jugar en compañía.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="juegos" href="https://jaimelopez06.github.io/JuegoBreakBricks/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/JuegoBreakBricks/" title="Vista previa de Break Bricks" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Jugar ahora <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Juegos</span>
+                        <h3>Break Bricks</h3>
+                        <p>Un juego arcade de romper bloques.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="juegos" href="https://jaimelopez06.github.io/JuegoSupervivencia/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/JuegoSupervivencia/" title="Vista previa de Juego Supervivencia" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Jugar ahora <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Juegos</span>
+                        <h3>Juego Supervivencia</h3>
+                        <p>Una aventura arcade de supervivencia por fases en una estación.</p>
+                    </div>
+                </a>
+
+                <a class="project-card" data-category="juegos" href="https://jaimelopez06.github.io/JuegoRutaAlBar/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-preview">
+                        <iframe src="https://jaimelopez06.github.io/JuegoRutaAlBar/" title="Vista previa de Ruta al bar" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+                        <span class="preview-hint" aria-hidden="true">Jugar ahora <span>↗</span></span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Juegos</span>
+                        <h3>Ruta al bar</h3>
+                        <p>Una aventura de plataformas con un destino muy claro.</p>
+                    </div>
+                </a>
+            </div>
         </section>
-
     </main>
 
     <footer class="footer">
         <p>© 2026 Jaime López — Web Design Boutique</p>
     </footer>
-
 </body>
 </html>
